@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <!-- driver的属性配置文件保存路径 -->
+    <parameter name="name" value="zhanshan" />
+    <parameter name="age" value="10" />
+    <!-- 定义测试模块，用test标签包围 -->
+    <test name="parameter">
+        <classes>
+            <class name="com.course.paramter.ParamterTest"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TreadSuite" parallel="classes" thread-count="2">
+    <!--methods级别：线程数是methods方法级别的，线程数量是2个线程,method 级别的，所有用例都可以在不同的线程下去执行，thread-count代表最大
+    并发并发数，xml文件配置的形式，不能执行线程池，只有方法上才可以指定线程池
+    tests级别： parallel="tests"，tests级别不同的test tag下面
+    classes级别： 相同的class tag下的用例在同一个线程中执行
+    运行的结果和期望的结果
+    -->
+
+    <test name="ThreadTest">
+        <classes>
+            <class name="com.course.mutithread.MutiThreadOnXML" />
+        </classes>
+    </test>
+
+
+    <test name="ThreadTest1">
+        <classes>
+            <class name="com.course.mutithread.MutiThreadOnXML" />
+        </classes>
+    </test>
+</suite>
